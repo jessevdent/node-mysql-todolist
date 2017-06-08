@@ -16,7 +16,7 @@ chai.use(chaiHttp);
 
 describe('Auth API v1', function() {
 
-    it('returns UnauthorizedError on GET /api/v1/todos when not logged in', function(done) {
+    it('returnss UnauthorizedError on GET /api/v1/todos when not logged in', function(done) {
         chai.request(server)
             .get('/api/v1/todos')
             .end(function(err, res) {
